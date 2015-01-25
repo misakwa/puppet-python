@@ -3,3 +3,8 @@ script: "./script/cibuild"
 gemfile: "this/does/not/exist"
 rvm:
   - "1.8.7"
+branches:
+    only:
+        - master
+        - development
+        - fix/template_pyenv.sh
