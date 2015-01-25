@@ -23,7 +23,7 @@ class python(
     }
 
     boxen::env_script { 'pyenv':
-      source   => 'puppet:///modules/python/pyenv.sh',
+      source   => template('python/pyenv.sh.erb'),
       priority => 'higher'
     }
   }
