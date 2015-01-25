@@ -23,7 +23,7 @@ class python(
     }
 
     boxen::env_script { 'pyenv':
-      source   => template('python/pyenv.sh.erb'),
+      content  => template('python/pyenv.sh.erb'),
       priority => 'higher'
     }
   }
